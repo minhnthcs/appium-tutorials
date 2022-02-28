@@ -11,5 +11,17 @@ exports.config = {
         timeout: 600000
     },
     maxInstances: 1,
-    sync: true
+    sync: true,
+    specs: [
+        './playWithMocha.js'
+    ],
+    capabilities: [
+        {
+            "platformName": "Android",
+            "automationName": "UiAutomator2",
+            "appPackage": "arevo.scooter_dashboard",
+            "udid": "5a99c71bf31f7246",
+            "appActivity": "MainActivity"
+        }
+    ]
 }
