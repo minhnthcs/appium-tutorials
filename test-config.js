@@ -13,14 +13,14 @@ exports.config = {
     maxInstances: 1,
     sync: true,
     specs: [
-        './playWithMocha.js'
+        './api/click.js'
     ],
     capabilities: [
         {
             "platformName": "Android",
             "automationName": "UiAutomator2",
-            "appPackage": "arevo.scooter_dashboard",
-            "udid": "5a99c71bf31f7246",
+            "appPackage": "com.wdiodemoapp",
+            "udid": "emulator-5554",
             "appActivity": "MainActivity"
         }
     ]
