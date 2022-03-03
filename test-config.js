@@ -13,7 +13,7 @@ exports.config = {
     maxInstances: 1,
     sync: true,
     specs: [
-        './api/click.js'
+        './api/*.js'
     ],
     capabilities: [
         {
