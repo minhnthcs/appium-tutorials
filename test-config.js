@@ -13,7 +13,7 @@ exports.config = {
     maxInstances: 1,
     sync: true,
     specs: [
-        './api/*.js'
+        './src/test_scripts/account/TC_001_Login_PageObject_01.js'
     ],
     capabilities: [
         {
