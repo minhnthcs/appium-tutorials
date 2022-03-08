@@ -13,6 +13,5 @@ describe("Account function", function () {
         LoginPage.login_btn.click();
 
         browser.pause(2000)
-
     })
 })
