@@ -1,4 +1,4 @@
-import LoginPage from '../../page_objects/account/login'
+import LoginPage from '../../page_objects/account/Login'
 describe("Account function", function () {
     it("should raise an error for wrong credentials", () => {
 
