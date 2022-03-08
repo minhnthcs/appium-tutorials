@@ -13,7 +13,8 @@ exports.config = {
     maxInstances: 1,
     sync: true,
     specs: [
-        './src/test_scripts/account/TC_001_Login_PageObject_01.js'
+        // './src/test_scripts/account/TC_001_Login_PageObject_01.js'
+        './src/test_scripts/account/TC_001_Login_PageObject_Global_Wait.js'
     ],
     capabilities: [
         {
