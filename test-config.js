@@ -1,3 +1,4 @@
+let chai = require('chai');
 exports.config = {
     runner: 'local',
     port: 4723,
@@ -17,7 +18,9 @@ exports.config = {
         // './src/test_scripts/account/TC_001_Login_PageObject_01.js'
         // './src/test_scripts/account/TC_001_Login_PageObject_Global_Wait.js'
         // './src/test_scripts/account/TC_001_Login_InheritancePageObject.js'
-        './src/test_scripts/account/TC_001_Login_PageObject_ChainingMethods.js'
+        // './src/test_scripts/account/TC_001_Login_PageObject_ChainingMethods.js'
+
+        './src/test_scripts/account/TC_001_Login.js'
     ],
     capabilities: [
         {
@@ -27,5 +30,9 @@ exports.config = {
             "udid": "emulator-5554",
             "appActivity": "MainActivity"
         }
-    ]
+    ],
+
+    before: function () {
+        global.chaiExpect = chai.expect // to distinguish with 'expect' of webdriverio
+    }
 }
