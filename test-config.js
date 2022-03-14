@@ -15,12 +15,7 @@ exports.config = {
     maxInstances: 1,
     sync: true,
     specs: [
-        // './src/test_scripts/account/TC_001_Login_PageObject_01.js'
-        // './src/test_scripts/account/TC_001_Login_PageObject_Global_Wait.js'
-        // './src/test_scripts/account/TC_001_Login_InheritancePageObject.js'
-        // './src/test_scripts/account/TC_001_Login_PageObject_ChainingMethods.js'
-
-        './src/test_scripts/account/TC_001_Login.js'
+        './src/test_scripts/account/TC1_Login_WithCommonFlows.js'
     ],
     capabilities: [
         {
