@@ -1,5 +1,6 @@
 const EMAIL_TXT_FIELD = '~input-email'
 const PASSWORD_TXT_FIELD = '~input-password'
+const LOGIN_ICON_HOME_SCREEN = '~Login'
 
 class CredentialForm {
 
@@ -14,25 +15,11 @@ class CredentialForm {
         return $(PASSWORD_TXT_FIELD)
     }
 
-    waitScreenDisplay() {
-        $(EMAIL_TXT_FIELD).waitForDisplayed()
-        return this
-    }
-    inputEmail(email) {
-        $(EMAIL_TXT_FIELD).setValue(email)
-        return this
-
+    get login_icon() {
+        $(LOGIN_ICON_HOME_SCREEN).waitForDisplayed();
+        return $(LOGIN_ICON_HOME_SCREEN)
     }
 
-    inputPass(password) {
-        $(PASSWORD_TXT_FIELD).setValue(password)
-        return this
-    }
-
-    verify_email_text_displayed(value) {
-        expect(this.email_txt_field).toHaveText(value, { trim: true })
-        chaiExpect(this.email_txt_field.getText()).to.be.equal(value, "[ERR] the email field value is incorrect")
-    }
 }
 
 export default CredentialForm
