@@ -8,7 +8,7 @@ const INVALID_CREDS = {
     password: '...'
 }
 
-exports.loginData = {
+export {
     INVALID_CREDS,
     VALID_CREDS
 }

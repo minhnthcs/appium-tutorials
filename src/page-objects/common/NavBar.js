@@ -7,6 +7,10 @@ const DRAG_ICON = '~Drag'
 
 class NavBar {
 
+    wai_till_screen_displayed() {
+        $(HOME_ICON).waitForDisplayed()
+    }
+
     get home_icon() {
         $(HOME_ICON).waitForDisplayed()
         return $(HOME_ICON)

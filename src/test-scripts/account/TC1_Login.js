@@ -1,9 +1,8 @@
 import LoginFlow from '../../test-flows/account/LoginFlow'
-import testData from '../../test-data/account/TC1_Login'
+import { VALID_CREDS, INVALID_CREDS } from '../../test-data/account/TC1_Login'
 
 describe('Account function', () => {
     it('should login successfully with valid credential', () => {
-        const { VALID_CREDS } = testData.loginData
         let { email, password } = VALID_CREDS
         let login = new LoginFlow(email, password)
         login

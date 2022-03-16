@@ -9,6 +9,5 @@ const INVALID_CREDS = {
 }
 
 exports.loginData = {
-    INVALID_CREDS,
-    VALID_CREDS
+    VALID_CREDS, INVALID_CREDS
 }
