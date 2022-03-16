@@ -17,7 +17,7 @@ class LoginFlow {
         return this
     }
 
-    verify_success_successfully() {
+    verify_login_successfully() {
         let expect_message_title = "Success"
         let expect_message_content = "You are logged in!"
         chaiExpect(LoginMessagePopup.success_message.getText()).to.be.equal(expect_message_title)

@@ -7,6 +7,6 @@ describe('Account function', () => {
         let login = new LoginFlow(email, password)
         login
             .login_with_credentials()
-            .verify_success_successfully()
+            .verify_login_successfully()
     })
 })
