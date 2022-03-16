@@ -1,10 +1,10 @@
 const VALID_CREDS = {
-    email: 'abc@abc',
-    password: '...'
+    email: 'abc@gmail.com',
+    password: '12345678'
 }
 
 const INVALID_CREDS = {
-    email: 'abc@abc1',
+    email: 'abc@gmail.com',
     password: '...'
 }
 
