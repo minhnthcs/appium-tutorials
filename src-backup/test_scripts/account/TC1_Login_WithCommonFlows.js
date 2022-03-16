@@ -11,5 +11,4 @@ describe("Login functionality", () => {
         login_flow.verify_email_text_field(email)
 
     })
-
 })

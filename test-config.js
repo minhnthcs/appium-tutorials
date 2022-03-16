@@ -15,7 +15,7 @@ exports.config = {
     maxInstances: 1,
     sync: true,
     specs: [
-        './src/test_scripts/account/TC1_Login_WithCommonFlows.js'
+        './src/test-scripts/account/TC1_Login.js'
     ],
     capabilities: [
         {
