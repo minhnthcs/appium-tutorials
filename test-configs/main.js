@@ -46,5 +46,10 @@ exports.config = {
                 resolve()
             })
         })
-    }
+    },
+    afterTest: function (test, context, { error, result, duration, passed, retries }) {
+        if (error) {
+            browser.takeScreenshot()
+        }
+    },
 }
