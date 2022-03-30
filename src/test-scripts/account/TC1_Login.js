@@ -2,7 +2,7 @@ import LoginFlow from '../../test-flows/account/LoginFlow'
 import { INVALID_CREDS, VALID_CREDS } from '../../test-data/account/TC1_Login'
 import allureReporter from '@wdio/allure-reporter'
 
-describe('Account function', () => {
+describe(`Account function test for ${browser.capabilities.deviceName}`, () => {
     it('should login successfully with valid credential', () => {
         allureReporter.addTestId("TC_001")
         allureReporter.addSeverity("critical")
