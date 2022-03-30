@@ -2,9 +2,9 @@ let chai = require('chai');
 const allure = require('allure-commandline')
 exports.config = {
     runner: 'local',
-    port: 4723,
+    // port: 4723,
     path: '/wd/hub',
-    host: 'localhost',
+    hostname: 'localhost',
     logLevel: "info",
     framework: "mocha",
     mochaOpts: {
