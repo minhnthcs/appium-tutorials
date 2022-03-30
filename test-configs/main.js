@@ -22,6 +22,9 @@ exports.config = {
         outputDir: 'allure-results',
         disableWebdriverStepsReporting: true,
         disableMochaHooks: true,
+        issueLinkTemplate: "https:/mybug-tracker.com/{}",
+        tmsLinkTemplate: "https:/my-test.com/{}",
+
     }]],
     before: function () {
         global.chaiExpect = chai.expect // to distinguish with 'expect' of webdriverio
