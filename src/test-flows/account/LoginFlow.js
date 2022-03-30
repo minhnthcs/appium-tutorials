@@ -1,6 +1,7 @@
 import Login from '../../page-objects/account/Login'
 import NavBar from '../../page-objects/common/NavBar'
 import LoginMessagePopup from '../../page-objects/account/LoginMessagePopup'
+import allureReporter from '@wdio/allure-reporter'
 class LoginFlow {
 
     // class constructor
@@ -13,8 +14,12 @@ class LoginFlow {
         if (!Login.is_on_login_screen()) {
             NavBar.login_icon.click()
         }
+
+        allureReporter.addStep(`input email as ${this.email}`)
         Login.email_txt_field.setValue(this.email)
+        allureReporter.addStep(`input password as ${this.password}`)
         Login.password_txt_field.setValue(this.password)
+        allureReporter.addStep(`click on Login button`)
         Login.login_btn.click()
         return this
     }
