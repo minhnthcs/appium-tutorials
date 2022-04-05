@@ -16,7 +16,7 @@ describe(`Account function test for ${browser.capabilities.deviceName}`, () => {
     it('should see valid message when login with wrong creds', function () {
         allureReporter.addIssue("TC_002")
         allureReporter.addTestId("002")
-        expect(true).toBe(false)
+        // expect(true).toBe(false)
         let { email, password } = INVALID_CREDS
         let login = new LoginFlow(email, password)
         login
