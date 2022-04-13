@@ -21,6 +21,10 @@ class NavBar {
         return $(LOGIN_ICON)
     }
 
+    get webview_icon() {
+        return $(WEBVIEW_ICON)
+    }
+
 }
 
 export default new NavBar()
